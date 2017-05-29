@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--For responsive design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- DataTables CSS -->
+        <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <!-- jQuery DataTables library -->
+        <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+
+                $('button').click(function(event) {
+
+                    alert('hi');
+                    event.preventDefault();
+
+
+
+                    var formData = [];
+                    var table = document.getElementById('driverTable');
+                    var count = 0;
+
+                    //var rows = table.rows;
+                    //var rowCount = rows.length;
+                    for (var i = 0, row; row = table.rows[i]; i++) {
+                    //for (var i = 0; i < rowCount; i++ ) {
+
+                        var obj = {};
+                        obj.scheduleNote = [];
+                        obj.scheduleNote.push({ note : "", createdDate: ""});
+                        event.preventDefault();
+                        obj.ObjectId = document.getElementById('ObjectId[]').value;
+                        obj.firstToText = document.getElementById('firstToText[]').value;
+                        obj.seniorityRank = document.getElementById('seniorityRank[]').value;
+                        obj.firstName = document.getElementById('firstName[]').value;
+                        obj.lastName = document.getElementById('lastName[]').value;
+                        obj.mobilePhone = document.getElementById('mobilePhone[]').value;
+                        obj.available = document.getElementById('available[]').value;
+                        obj.text = document.getElementById('text[]').value;
+                        var input = document.getElementById('scheduleNoteNote[]');
+                        if (input.value.length !== 0) {
+                            obj.scheduleNote[0].push({ note : input.value });
+                        }
+                        formData.push(obj);
+                        //console.log(obj);
+                        console.log(formData);
+                        event.preventDefault();
+                        count++;
+
+                    }
+                    event.preventDefault();
+
+                });
+                function myFunction () {
+                    var x = document.getElementById('driverFormInfo');
+                    var text = "";
+                    var i;
+
+                    for (i = 0; i < x.length; i++) {
+                        text += x.elements[i].value;
+                        console.log(text);
+                    }
+                }
+            });
+
+
+        </script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <ul class="nav nav-tabs form-tabs">
+              <li id="driver-details" class="active"><a data-toggle="tab" href="#driverUpdateForm">Drivers</a></li>
+              <li id='create-trip'><a data-toggle="tab" href="#trips">Trips</a></li>
+            </ul>
+            <div class="tab-content">
+                    <fieldset id="driverForm" class="tab-pane fade in active">
+                        <h1>Drivers</h1>
+                        <p>Update driver availability, create/edit/delete schedule notes for drivers, indicate text capability, and manually set driver as "first to text"</p>
+                            <form id="driverFormInfo" name="driverDetailsForm" action="/drivers/update1" method="POST">
+                                <div class="table-responsive">
+                                    <table class="table table-striped" id="driverTable">
+                                        <thead>
+                                            <tr>
+                                                <th>1st</th>
+                                                <th>Rank</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Phone</th>
+                                                <th>Available</th>
+                                                <th>Text</th>
+                                                <th>Schedule Note</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {{#each drivers}}
+                                            <tr id="driverOne[]">
+                                                <input type='hidden' class="form-control" name='ObjectId[]' id='ObjectId[]' value='{{this.stringObjectId}}'/>
+                                                <td><input type='radio' class="radio-inline" name='firstToText[]' id='firstToText[]' value='{{this.firstToText}}' {{#if this.firstToText }} checked='true' {{/if}} /></td>
+                                                <td><input type='text' class="form-control-static" name='seniorityRank[]' id='seniorityRank[]' value='{{this.seniorityRank}}' readonly /></td>
+                                                <td><input type='text' class="form-control-static" name='firstName[]' id='firstName[]' value='{{this.firstName}}' readonly /></td>
+                                                <td><input type='text' class="form-control-static" name='lastName[]' id='lastName[]' value='{{this.lastName}}' readonly /></td>
+                                                <td><input type='text' class="form-control-static" name='mobilePhone[]' id='mobilePhone[]' value='{{this.mobilePhone}}' readonly="readonly" /></td>
+                                                <td><input type='checkbox' class='checkbox-inline' name='available[]' id='available[]' value='{{this.available}}' {{#if this.available }} checked='true'{{/if}}/></td>
+                                                <td><input type='checkbox' class='checkbox-inline' name='text[]' id='text[]' value='{{this.text}}' {{#if this.text }} checked='true' {{/if}}/></td>
+                                                <td><input type='text' name='scheduleNoteNote[]' id='scheduleNoteNote[]' value='{{this.scheduleNote.0.note}}'></td>
+                                                <input type='hidden' name='scheduleNoteCreateDate[]' id='scheduleNoteCreateDate[]' value='{{this.scheduleNote.createDate}}'>
+                                                <br />
+                                            </tr>
+                                            {{/each}}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <button id="saveDriverInfo" class="btn btn-primary" type="submit">Save</button>
+
+                            </form>
+                    </fieldset>
+                <div id="trips" class="tab-pane fade">
+                    <h1>Trips</h1>
+                    <p>To create a trip: select the location, number of drivers needed, date, and time. </p>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "banking-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "export TESTS=true; mocha ./test/*.spec.js",
+    "prod": "export ENV=prod; node index.js",
+    "dev": "export ENV=dev; node index.js | bunyan -o short"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "bunyan": "^1.8.8",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-plugin-import": "^2.2.0",
+    "install": "^0.8.7",
+    "mocha": "^3.2.0",
+    "npm": "^4.4.1"
+  }
+}

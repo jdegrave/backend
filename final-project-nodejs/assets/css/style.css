@@ -1,0 +1,578 @@
+/*******************************************************************************************************************
+*************** HOME / INDEX PAGE *****************************************************************************************
+********************************************************************************************************************/
+.index-page {
+	overflow: hidden;
+	position: absolute;
+	width: 460px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+ 	-ms-transform: translateX(-50%) translateY(-50%);
+ 		transform: translateX(-50%) translateY(-50%);
+}
+
+
+.index-page h1 {
+	color: #4CAE4C;
+    font-weight: 500;
+	font-size: 42px;
+	line-height: 63px;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+/*******************************************************************************************************************
+*************** CUSTOM CONTAINERS **********************************************************************************
+********************************************************************************************************************/
+[class^="container-"] {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.container-960 {
+	max-width: 960px;
+}
+
+
+
+
+/*******************************************************************************************************************
+*************** SIGNUP *****************************************************************************************
+********************************************************************************************************************/
+.signup-page {
+	overflow: hidden;
+	position: absolute;
+	width: 460px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+ 	-ms-transform: translateX(-50%) translateY(-50%);
+ 		transform: translateX(-50%) translateY(-50%);
+}
+
+.signup-page .header {
+	overflow: hidden;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.signup-page .header h1 {
+	color: #4CAE4C;
+	font-size: 42px;
+	line-height: 63px;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.signup-page .form-box .form-control {
+	color: #4CAE4C;
+	height: 30px;
+	border-radius: 0;
+	border: 1px solid #787c83;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+
+.signup-page .btn-green {
+	font-size: 16px;
+	line-height: 18px;
+	padding: 8px 26px;
+	border-radius: 0;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+
+.signup-page .checkbox {
+	position: relative;
+	display: block;
+	margin-left: 0;
+	padding-left: 0;
+	font-size: 16px;
+	line-height: 20px;
+
+}
+
+/*******************************************************************************************************************
+*************** LOGIN *****************************************************************************************
+********************************************************************************************************************/
+.login-page {
+	overflow: hidden;
+	position: absolute;
+	width: 460px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+ 	-ms-transform: translateX(-50%) translateY(-50%);
+ 		transform: translateX(-50%) translateY(-50%);
+}
+
+.login-page .header {
+	overflow: hidden;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.login-page .header h1 {
+	color: #4CAE4C;
+	font-size: 42px;
+	line-height: 63px;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.login-page .header h2 {
+	color: #6b7078;
+	font-size: 28px;
+	line-height: 57px;
+	font-weight: 100;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.login-page .btn-green {
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px 26px;
+	border-radius: 0;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+/*.login-page .input-group-addon {
+	min-width: 45px;
+    text-align: center;
+}*/
+
+
+/*******************************************************************************************************************
+*************** PAGES **********************************************************************************************
+********************************************************************************************************************/
+.page-container {
+    padding-left: 225px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.page-container.toggled {
+    padding-left: 225px;
+}
+
+.content-container {
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.content-inner {
+	position: relative;
+	padding: 95px 15px 60px 15px;
+}
+
+.page-container.toggled .page-title {
+	padding: 2px 255px 6px 30px;
+}
+
+.page-container .page-title {
+	border-bottom: 1px solid #e7e7e9;
+	width: 100%;
+	background: #f4f7f9;
+	position: fixed;
+	z-index: 10;
+	padding: 2px 255px 6px 30px;
+	z-index: 1001;
+}
+
+.page-container .page-title .mobile-menu {
+	display: none;
+	float: left;
+	margin: 8px 20px 0 0;
+	overflow: hidden;
+}
+
+.page-container .page-title .mobile-menu a {
+	display: block;
+	padding: 3px 15px 5px 15px;
+	background: #4287ee;
+	color: #fff;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.page-container .page-title h3 {
+	font-size: 22px;
+	line-height: 33px;
+	font-weight: 400;
+	margin: 0;
+	color: #4c4c4c;
+}
+
+.page-title .btn-add {
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px 20px;
+	box-shadow: none;
+	margin-top: 9px;
+}
+
+.page-title .btn-pager {
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px 20px;
+	box-shadow: none;
+	margin-top: 9px;
+	border: 1px solid #bebdbd;
+	background: transparent;
+	color: #bebdbd;/* bebdbd */
+	text-transform: uppercase;
+	border-radius: 2px;
+}
+
+.page-title .btn-pager:hover {
+	border: 1px solid #ee425a;
+	color: #ee425a;
+}
+
+.page-title .dropdown-toggle {
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px 20px;
+	box-shadow: none;
+	margin-top: 9px;
+	background: #ee425a;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 2px;
+}
+
+.page-title .dropdown-toggle .fa {
+	padding-left: 3px;
+}
+
+.page-title .dropdown-menu {
+	background: #ee425a;
+	border: 1px solid transparent;
+	box-shadow: none;
+	min-width: 245px;
+	margin: -1px 0 0 0;
+	padding: 0;
+	left: auto;
+	right: 0;
+	border-radius: 2px;
+	border-top-right-radius: 0;
+}
+
+.page-title .dropdown-menu > li {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.page-title .dropdown-menu > li > a {
+	font-size: 14px;
+	line-height: 21px;
+	color: #fff;
+	padding: 15px 30px;
+}
+
+.page-title .dropdown-menu > li > a .fa {
+	padding-right: 3px;
+}
+
+.page-title .dropdown-menu > li > a:hover,
+.page-title .dropdown-menu > li > a:focus {
+	background: #dd344c;
+}
+
+/*******************************************************************************************************************
+*************** SIDEBAR ********************************************************************************************
+********************************************************************************************************************/
+.sidebar-container {
+    z-index: 1000;
+    position: fixed;
+    left: 225px;
+    width: 225px;
+    height: 100%;
+    margin-left: -225px;
+    overflow: hidden;
+    background: #fff;
+    border-right: 1px solid #e7e7e9;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidebar-container .logo {
+	padding: 15px 0 20px 0;
+	border-bottom: 1px solid #e7e7e9;
+	background: #4CAE4C;
+	text-align: center;
+}
+
+.sidebar-container .logo h3 {
+	font-size: 20px;
+	line-height: 30px;
+	color: #fff;
+	margin: 0;
+	font-weight: 400;
+}
+
+.page-container.toggled .sidebar-container {
+	width: 225px;
+}
+
+.sidebar-container .user-meta {
+	width: 100%;
+}
+
+.sidebar-container .user-meta .btn {
+	text-align: left;
+	border-radius: 0;
+	border: 1px solid transparent;
+	color: #616161;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 500;
+	padding: 15px 5px 15px 30px;
+	display: block;
+	width: 100%;
+	background: transparent;
+}
+
+.sidebar-container .user-meta .btn:hover,
+.sidebar-container .user-meta .btn:focus,
+.sidebar-container .user-meta .dropdown.open .btn {
+	background: #f4f7f9;
+}
+
+.sidebar-container .user-meta .btn .fa {
+	padding-left: 3px;
+}
+
+.sidebar-container .user-meta .btn span {
+	display: block;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #898989;
+}
+
+.sidebar-container .user-meta .dropdown-menu {
+	background: #f4f7f9;
+	border-radius: 0;
+	border: 1px solid transparent;
+	box-shadow: none;
+	min-width: 225px;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar-container .user-meta .dropdown-menu > li {
+	border-bottom: 1px solid #e7e7e9;
+}
+
+.sidebar-container .user-meta .dropdown-menu > li > a {
+	font-size: 14px;
+	line-height: 21px;
+	color: #616161;
+	padding: 15px 30px;
+}
+
+.sidebar-container .user-meta .dropdown-menu > li > a .fa {
+	padding-right: 3px;
+}
+
+.sidebar-container .user-meta .dropdown-menu > li > a:hover,
+.sidebar-container .user-meta .dropdown-menu > li > a:focus {
+	background: #e7e7e9;
+}
+
+.sidebar-container .user-meta .dropdown-menu .divider {
+	background-color: #e7e7e9;
+}
+
+
+.sidebar-nav {
+    width: 100%;
+    margin: 15px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+	overflow: hidden;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #4CAE4C;
+    padding: 15px 30px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.sidebar-nav li.active a,
+.sidebar-nav li.active a:hover {
+	color: #fff;
+    background: #4287ee;
+}
+
+.sidebar-nav li a:hover {
+    color: #eda42f;
+    background: #f4f7f9;
+}
+
+.sidebar-nav li a .fa {
+	margin-right: 5px;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+/*******************************************************************************************************************
+*************** BREADCRUMBS *****************************************************************************************
+********************************************************************************************************************/
+.breadcrumb {
+	margin-bottom: 0;
+	padding: 0;
+	background: none;
+	border-radius: 0;
+}
+
+.breadcrumb li {
+	font-size: 15px;
+	line-height: 22.5px;
+	color: #4CAE4C;
+}
+
+.breadcrumb > li + li::before {
+	font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: normal;
+    content: "\f105";
+   	color: rgba(37,37,37,0.5);
+}
+
+.breadcrumb li a {
+	color: #4CAE4C;
+}
+
+.breadcrumb > .active {
+	color: #eda42f;
+}
+
+
+/*******************************************************************************************************************
+*************** STAT BOXES *****************************************************************************************
+********************************************************************************************************************/
+.stat-boxes {
+	overflow: hidden;
+}
+
+.stat-boxes .box {
+	overflow: hidden;
+	padding: 25px 20px 40px 20px;
+	position: relative;
+	border: 1px solid #e7e7e9;
+	margin-bottom: 20px;
+}
+
+.stat-boxes .box h5 {
+	font-size: 13px;
+	line-height: 19.5px;
+	font-weight: 500;
+	color: #2c2c2c;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.stat-boxes .box h5 .fa {
+	padding-left: 5px;
+}
+
+.stat-boxes .box h3 {
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 400;
+	color: #4c4c4c;
+	margin: 0;
+}
+
+.stat-boxes .box h4 {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #4c4c4c;
+	margin: 0;
+}
+
+.stat-boxes .box .icon {
+	position: absolute;
+	right: 5px;
+	top: 23px;
+	overflow: hidden;
+	padding: 0 5px;
+	opacity: 0.6;
+}
+
+.stat-boxes .box .icon .fa {
+	font-size: 68px;
+	line-height: 68px;
+}
+
+
+/*******************************************************************************************************************
+*************** FORM LAYOUT ****************************************************************************************
+********************************************************************************************************************/
+.form-box label {
+	font-size: 16px;
+	line-height: 24px;
+	color: #252525;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.form-box .form-control {
+	color: #4CAE4C;
+	height: 50px;
+	border-radius: 0;
+	border: 1px solid #787c83;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+
+
+
+/*******************************************************************************************************************
+*************** CUSTOM BUTTONS *************************************************************************************
+********************************************************************************************************************/
+.btn-green {
+	background: #4CAE4C;
+	color: #fff;
+}

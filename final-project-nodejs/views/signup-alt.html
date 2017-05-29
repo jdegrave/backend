@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset='utf-8'>
+            <title>Robo-SMS Signup</title>
+            <meta name='google-site-verification' content='asmfeNNCxj5Bubj4-CN3J87gjOjT48g4EOKq7JRNb3I' />
+            <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+
+            <link href='//fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet'>
+            <link href='/css/bootstrap.min.css' rel='stylesheet'>
+            <link href='/css/font-awesome.min.css' rel='stylesheet'>
+            <link href='/css/style.css' rel='stylesheet'>
+        </head>
+
+        <body>
+
+            <div class='login-page'>
+                <div class='header'>
+                    <h1 class='header'><i class='fa fa-sign-in'></i>Robo-SMS</h1>
+                    <h2>Enter your user information</h2>
+                </div> <!-- end header -->
+
+                {{# if this.message }}
+                    <div class='alert alert-danger'>{{this.message}}</div>
+                {{/if}}
+
+                <div class='form-box'>
+                    <!-- LOGIN FORM -->
+                    <form action='/signup' method='POST'>
+
+                        <div class='form-group'>
+                            <label class='checkbox'>Admin Acess</label>
+                            <input type='checkbox' name='adminCheck' class='form-control'>
+                        </div> <!-- end form group -->
+
+                        <div class='form-group'>
+                            <label>Usermame</label>
+                            <div class='input-group'>
+                                <div class='input-group-addon'><i class='fa fa-id-badge'></i></div>
+                                <input type='text' class='form-control' name='username'>
+                            </div> <!-- end input-group-addon -->
+                        </div>  <!-- end form group -->
+
+                        <div class='form-group'>
+                            <label>First Name</label>
+                            <div class='input-group'>
+                                <div class='input-group-addon'><i class='fa fa-id-badge'></i></div>
+                                <input type='text' class='form-control' name='uFirstName'>
+                            </div> <!-- end input-group-addon -->
+                        </div> <!-- end form group -->
+
+                        <div class='form-group'>
+                            <label>Last Name</label>
+                            <div class='input-group'>
+                                <div class='input-group-addon'><i class='fa fa-id-badge'></i></div>
+                                <input type='text' class='form-control' name='uLastName'>
+                            </div> <!-- end input-group-addon -->
+                        </div> <!-- end form group -->
+
+                        <div class='form-group'>
+                            <label>Email</label>
+                            <div class='input-group'>
+                                <div class='input-group-addon'><i class='fa fa-envelope-o'></i></div>
+                                <input type='text' class='form-control' name='email'>
+                            </div> <!-- end input-group-addon -->
+                        </div> <!-- end form group -->
+
+                        <div class='form-group'>
+                            <label>Password</label>
+                            <div class='input-group'>
+                                <div class='input-group-addon'><i class='fa fa-lock'></i></div>
+                                <input type='password' class='form-control' name='password'>
+                            </div> <!-- end input-group-addon -->
+                        </div> <!-- end form group -->
+                    <input type='submit' value='Sign Up' class='btn btn-green' id='submit-signup'>
+                </form>
+
+                <hr>
+
+                <p>Already have an account? <a href='/login'>Login</a></p>
+                <p>Or go <a href='/'>Home</a>.</p>
+
+            </div>
+            <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script> <!-- latest version -->
+            <script src='/js/bootstrap.min.js'></script>
+            <script src='/js/jquery.site.js'></script>
+        </body>
+    </html>

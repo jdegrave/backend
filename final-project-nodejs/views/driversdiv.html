@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Robo-SMS</title>
+            <link rel='stylesheet' href='../assets/main.css' />
+        </head>
+        <body>
+            <header class='driverHeader'>
+                <h2>ROBO-SMS: Driver Tab</h2>
+            </header>
+            <main>
+                <section class='driverSection'>
+                    <div id='driverDivForm'>
+                    <form onsubmit='prepFormData()' class='driverfields' name='driversForm' id='driversForm' action='/drivers/update1' method='POST'>
+                        <fieldset>
+                            <legend>OTR (Over-the-Road) DRIVERS</legend>
+
+                                <label>1st</label>
+                                <label>Rank</label>
+                                <label>First Name</label>
+                                <label>Last Name</label>
+                                <label>Mobile</label>
+                                <label>Unavailable</label>
+                                <label>Text</label>
+                                <label>Schedule Note</label>
+                                <br />
+
+                                {{#each drivers}}
+                                <div id='driverDataRow'>
+                                    <input type='hidden' name='ObjectId' value='{{this.stringObjectId}}'/>
+                                    <input type='radio' name='firstToText' value='{{this.firstToText}}' {{#if this.firstToText }} checked='true' {{/if}} />
+                                    <input type='text' size=3 name='seniorityRank' value='{{this.seniorityRank}}' readonly />
+                                    <input type='text' maxlength=25 name='firstName' value='{{this.firstName}}' readonly />
+                                    <input type='text' size=30 maxlength=45 name='lastName' value='{{this.lastName}}' readonly />
+                                    <input type='text' maxlength=15 name='mobilePhone' value='{{this.mobilePhone}}' readonly />
+                                    <input type='checkbox' maxlength=12 name='available' value='{{this.available}}' {{#if this.available }} checked='true' {{/if}} />
+                                    <input type='checkbox' maxlength=5 name='text' value='{{this.text}}' {{#if this.text }} checked='true' {{/if}}>
+                                    <input type='text' size=100 name='scheduleNote' value='{{this.scheduleNote.0.note}}'>
+                                    <input type='hidden' name='scheduleNote' value='{{this.scheduleNote.createDate}}'>
+                                    <br />
+                                </div>
+                                {{/each}}
+                    </fieldset>
+                        <input type='submit' value='SAVE'/>
+                </section>
+            </main>
+            <script type='text/javascript' src='../assets/drivers.js'></script>
+        </body>
+    </html>

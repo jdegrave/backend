@@ -5,7 +5,7 @@
 // ... (if you install Bunyan globally - even if you don't have it installed this line
 // will go there
 
-// this file is Blake's way
+// this file is Blake's way - Basic
 
 var express = require('express');
 var bunyan = require('bunyan');

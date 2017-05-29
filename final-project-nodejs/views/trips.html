@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="utf-8">
+  		<title>Dashboard page - PacktCMS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+		<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="page-container">
+
+			<div class="sidebar-container">
+				<div class="logo">
+					<h3>Robo-SMS</h3>
+				</div><!-- .logo -->
+
+				<div class="user-meta">
+					<div class="dropdown">
+					 	<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+					    	Jodi De Grave <i class="fa fa-angle-down"></i>
+					    	<span>Administrator</span>
+					  	</button>
+					  	<ul class="dropdown-menu">
+					    	<li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+					    	<li><a href="/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
+					  	</ul>
+					</div><!-- .dropdown -->
+				</div><!-- .user-meta -->
+
+				<ul class="sidebar-nav">
+					<li>
+					    <a href="/trips"><i class="fa fa-dashboard"></i> Trip Dashboard</a>
+					</li>
+					<li>
+					    <a href="/drivers"><i class="fa fa-car"></i> Drivers</a>
+					</li>
+					<li>
+					    <a href="#"><i class="fa fa-pie-chart"></i> Reports</a>
+					</li>
+					<li>
+					    <a href="#"><i class="fa fa-users"></i> Users </a>
+					</li>
+				</ul>
+
+
+
+			</div><!-- .sidebar-container -->
+
+
+			<div class="content-container">
+
+				<div class="page-title">
+					<div class="mobile-menu">
+						<a href="#"><i class="fa fa-bars"></i></a>
+					</div><!-- .mobile-menu -->
+
+					<div class="pull-left">
+						<h3>Trip Dashboard</h3>
+						<ol class="breadcrumb">
+							<li><a href="/trips">Dashboard</a></li>
+						</ol><!-- .breadcrumb -->
+					</div><!-- .pull-left -->
+				</div><!-- .page-title -->
+
+				<div class="content-inner">
+					<div class="stat-boxes">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-6 col-md-3">
+									<div class="box">
+										<h5>Yes Accepted  <i class="fa fa-angle-right"></i></h5>
+										<h3>3</h3>
+										<h4>Total Acceptances</h4>
+										<div class="icon">
+											<i class="fa fa-check-square-o"></i>
+										</div><!-- .icon -->
+									</div><!-- .box -->
+								</div><!-- .col-md-3 -->
+
+								<div class="col-sm-6 col-md-3">
+									<div class="box">
+										<h5>Declined <i class="fa fa-angle-right"></i></h5>
+										<h3>2</h3>
+										<h4>Total Declined</h4>
+										<div class="icon">
+											<i class="fa fa-ban"></i>
+										</div><!-- .icon -->
+									</div><!-- .box -->
+								</div><!-- .col-md-3 -->
+
+								<div class="col-sm-6 col-md-3">
+									<div class="box">
+										<h5>No Response <i class="fa fa-angle-right"></i></h5>
+										<h3>5</h3>
+										<h4>Total No Responses</h4>
+										<div class="icon">
+											<i class="fa fa-users"></i>
+										</div><!-- .icon -->
+									</div><!-- .box -->
+								</div><!-- .col-md-3 -->
+
+								<div class="col-sm-6 col-md-3">
+									<div class="box">
+										<h5>Response Deadline <i class="fa fa-angle-right"></i></h5>
+										<h3>01:10:34</h3>
+										<h4>Time Remaining</h4>
+										<div class="icon">
+											<i class="fa fa-clock-o"></i>
+										</div><!-- .icon -->
+									</div><!-- .box -->
+								</div><!-- .col-md-3 -->
+							</div><!-- .row -->
+						</div><!-- .container-fluid -->
+					</div><!-- .stat-boxes -->
+				</div><!-- .content-inner -->
+			</div><!-- .content-container -->
+		</div><!-- .page-container -->
