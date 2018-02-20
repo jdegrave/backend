@@ -1,11 +1,11 @@
-#Purpose
+# Purpose
 This folder contains Jodi DeGrave's homework for the U of A Global Campus Backend Developer Certificate.
 
-#Organization
+# Organization
 - Each week's homework will have its own separate folder.
 - Individual exercises will be in separate files or as required.
 
-#Homework Directory
+# Homework Directory
 - [Homework-02: Conditionals, Arrays, & Objects](https://github.com/jdegrave/backend/tree/master/Homework/Homework-02)
 - [Homework-03: Various Exercises (Free Code Camp, Exercism, etc)](https://github.com/jdegrave/backend/tree/master/Homework/Homework-03)
 - [Homework-04: Various Exercises (match, reg exp, etc)](https://github.com/jdegrave/backend/tree/master/Homework/Homework-04)
