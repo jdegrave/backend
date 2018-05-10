@@ -27,7 +27,7 @@ NOTE: 'POST' is used because the data is coming from a form, which only performs
 
 
 To update driver availability, send requests in the application/json format:
-'''node
+```node
 [
     {
         "_id" : ObjectId("58f910bc1693d1240f16ce10"),
@@ -43,7 +43,7 @@ To update driver availability, send requests in the application/json format:
         "available" : true
     }, etc.
 ]
-'''
+```
 
 GET '/trips'
 - Retrieves locations from mongodb
