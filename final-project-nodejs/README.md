@@ -39,12 +39,11 @@ Schemas-README.MD.
 
 
 # Background
-This app is desinged to solve a business problem at a local branch of an international car rental
-agency. This app enables an administrator to do in a few clicks what normally took at least 1 hour
+This app is designed to solve a business problem at a local branch of an international car rental
+agency. This app enables an administrator to do in a few clicks what normally takes at least 1 hour
 of her time every day.
 
-The problem: Very manual, paper-based process that required an hour at least of an administrator's time on a daily basis. She calls each driver (approximately 20) to see if they are available and
-willing to go to regional location at least once per day, manually keeping track of each driver called, and his or her response.
+The problem: Very manual, paper-based process that required an hour (at least) of an administrator's time on a daily basis. She calls each driver (approximately 20) to see if they are available and willing to go to a regional rental location at least once per day, manually keeping track of each driver called, and his or her response.
 
 # App Features
 ## Drivers
@@ -92,12 +91,12 @@ willing to go to regional location at least once per day, manually keeping track
 -  
 
 ## App Users
-- Add users to (not drivers) via the front end
+- Add users (not drivers) via the front end
 - Set user's access level:
   -- admin
   -- user
 - User-level access:
-    - Set 1st to text driver
+    - Set 1st-to-text driver
     - Change availability for drivers
     - Change text capability for drivers
     - Add and delete schedule notes for drivers
