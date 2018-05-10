@@ -5,10 +5,11 @@ evaluate basic CRUD operations to MongoDB, some setup is required. Use these ins
 to ensure tests behave as expected.
 
 NOTE: To test the texting portion of the tests, I created 3 databases:
-       jodi-only -- has all of the alphatest drivers but I am the only 'available' driver
-       special-test -- has all of the alphatest drivers but only myself and two others
+       - jodi-only -- has all of the alphatest drivers but I am the only 'available' driver
+       - special-test -- has all of the alphatest drivers but only myself and two others
                        are 'avaialble' (these are friends of mine that are tech-savvy)
-       alphatest -- has work colleagues, friends and me - 11 available drivers, plus a few REAL drivers that MUST ALWAYS BE SET TO 'UNAVAILABLE!!'              
+       - alphatest -- has work colleagues, friends and me - 11 available drivers, plus a few REAL drivers that MUST ALWAYS BE SET TO 
+                      'UNAVAILABLE!!'              
 
 
 NOTE:  ONLY use the 'seed' database for driver services tests!
