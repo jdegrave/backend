@@ -57,24 +57,23 @@ NOTE: DELETE requests may not be available in the initial release.
 1. If you haven't done so already, perform a GET request (```localhost:3000/drivers);```
 
 2. Setup the data for the following tests as described. If a test isn't indicated, there are no special data requirements.
-- *routeIndex tests: -- PUT /drivers (updateOneDriverById test)*
--- Copy the *ObjectId* from Bob Olson (6th in the GET results set) in the following line of code:
--- "_id": "* Paste ObjectId here *",
+   - *routeIndex tests: -- PUT /drivers (updateOneDriverById test)*
+      -- Copy the *ObjectId* from Bob Olson (6th in the GET results set) in the following line of code:
+      -- "_id": "* Paste ObjectId here *",
+      -- Also, change the following data to:
+         -- "text" : false,
+         -- "available" : false,
+         -- ScheduleNote : [{ "Bob's 1st Test Note "}]  
 
--- Also, change the following data to:
--- "text" : false,
--- "available" : false,
--- ScheduleNote : [{ "Bob's 1st Test Note "}]  
-
-- *routeIndex GET - /driver/id/:id (fetchDriverByID test)*
--- Copy the *ObjectId* from Gary Holtgrewe (last in the GET results set) in the following line of code:
--- .get('/driver/id/* Paste ObjectId here*');
+   - *routeIndex GET - /driver/id/:id (fetchDriverByID test)*
+      -- Copy the *ObjectId* from Gary Holtgrewe (last in the GET results set) in the following line of code:
+          -- .get('/driver/id/* Paste ObjectId here*');
 
 
 
 
 ## Location Services Tests
--
+- TBD
 
 ## Trip Services Tests  
 -- USE SEED-ALPHATEST! DO NOT CHANGE AVAILABLITY OF DRIVERS!
