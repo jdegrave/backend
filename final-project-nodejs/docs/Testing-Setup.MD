@@ -9,8 +9,8 @@ NOTE:  To test the texting portion of the tests, I created 3 databases:
        - jodi-only -- has all of the alphatest drivers but I am the only 'available' driver
        - special-test -- has all of the alphatest drivers but only myself and two others
                        are 'avaialble' (these are friends of mine that are tech-savvy)
-       - alphatest -- has work colleagues, friends and me - 11 available drivers, plus a few REAL drivers that MUST ALWAYS BE SET TO 
-                      'UNAVAILABLE!!'              
+       - alphatest -- has work colleagues, friends and me - 11 available drivers, plus a few REAL drivers 
+                      that MUST ALWAYS BE SET TO 'UNAVAILABLE!!'              
 
 
 NOTE:  ONLY use the 'seed' database for driver services tests!
@@ -33,13 +33,15 @@ NOTE:  ONLY use the 'seed' database for driver services tests!
 4. Setup the following tests with this specific data (if a test isn't mentioned, doesn't require special setup). 
    Copy and paste from the GET request results set in Step 3 as necessary:
 
-    - *driverServices tests: -- fetchDriverById test*
-        -- From the results set, copy the *ObjectId* for Jim Westphal (1st in the list in the GET request results) in the following 
-           lines of test code:
-        -- return driverServices.fetchDriverByID('* Paste Object ID here *');
-        -- expect(driverData._id.toString()).to.equal('* Paste Object ID here *');
+    - *driverServices tests: 
+        -- fetchDriverById test*
+           -- From the results set, copy the *ObjectId* for Jim Westphal (1st in the list in the GET request results) in the following 
+              lines of test code:
+              -- return driverServices.fetchDriverByID('* Paste Object ID here *');
+              -- expect(driverData._id.toString()).to.equal('* Paste Object ID here *');
 
     - *driverServices tests: -- fetchDriverBymobilePhone test*
+    
         -- This already has Jim Westphal's mobile phone number in the test. He is 1st in the list in the GET request results. If you 
            change the number, you must change all the data expected to return.
 
