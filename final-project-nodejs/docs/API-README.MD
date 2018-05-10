@@ -4,8 +4,8 @@ Robo-SMS uses Node.js as the web server and Twilio APIs for actually sending and
 receiving text messages. Only the Node.js APIs are documented here; see the [Twilio](www.twillio.com) documentation for information on the Twilio APIs.
 
 GET '/drivers'
-- fetches driver information from mongodb via mongoose
-- loads Drivers' Tab as the home page:
+- Fetches driver information from mongodb via mongoose
+- Loads Drivers' Tab as the home page:
    - First name
    - Last name
    - Phone number
@@ -20,13 +20,14 @@ POST '/drivers/update1'
 - Updates to Driver Availability/Unavailability
 - Updates to driver Schedule Notes
 - Updates to driver Text capability
-- Format: expects an array of driver objects, since it checks the front end.
+- Format: expects an array of driver objects
 
 NOTE: 'POST' is used because the data is coming from a form, which only performs
       'GET' and 'POST' requests.
 
-To update driver availability, send requests in the application/json format:
 
+To update driver availability, send requests in the application/json format:
+'''node
 [
     {
         "_id" : ObjectId("58f910bc1693d1240f16ce10"),
@@ -42,6 +43,7 @@ To update driver availability, send requests in the application/json format:
         "available" : true
     }, etc.
 ]
+'''
 
 GET '/trips'
 - Retrieves locations from mongodb
