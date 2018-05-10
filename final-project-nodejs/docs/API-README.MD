@@ -26,6 +26,7 @@ NOTE: 'POST' is used because the data is coming from a form, which only performs
       'GET' and 'POST' requests.
 
 To update driver availability, send requests in the application/json format:
+
 [
     {
         "_id" : ObjectId("58f910bc1693d1240f16ce10"),
