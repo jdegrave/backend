@@ -4,7 +4,8 @@ Most of the unit tests are stand-alone, as expected. However, for small tests th
 evaluate basic CRUD operations to MongoDB, some setup is required. Use these instructions
 to ensure tests behave as expected.
 
-NOTE: To test the texting portion of the tests, I created 3 databases:
+NOTE:  To test the texting portion of the tests, I created 3 databases:
+
        - jodi-only -- has all of the alphatest drivers but I am the only 'available' driver
        - special-test -- has all of the alphatest drivers but only myself and two others
                        are 'avaialble' (these are friends of mine that are tech-savvy)
