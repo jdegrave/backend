@@ -35,8 +35,8 @@ NOTE:  ONLY use the 'seed' database for driver services tests!
 
     - *driverServices tests: -- fetchDriverById test*
     
-           -- From the results set, copy the *ObjectId* for Jim Westphal (1st in the list in the GET request results) in the following 
-              lines of test code:
+        From the results set, copy the *ObjectId* for Jim Westphal (1st in the list in the GET request results) in the following 
+        lines of test code:
             
               
               -- return driverServices.fetchDriverByID('* Paste Object ID here *');
