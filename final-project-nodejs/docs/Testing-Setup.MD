@@ -16,7 +16,7 @@ NOTE:  To test the texting portion of the tests, I created 3 databases:
 NOTE:  ONLY use the 'seed' database for driver services tests!
        ONLY Use the 'seed-alphatest' db for trip services test
 
-##Seeding the Database - DRIVER TESTS ONLY!!!
+## Seeding the Database - DRIVER TESTS ONLY!!!
  - Script and data files are in the /seed folder
  - Run ```node seed-script.js```
 
@@ -30,7 +30,8 @@ NOTE:  ONLY use the 'seed' database for driver services tests!
 
 3. Use Postman or curl to perform a GET request to endpoint ```localhost:3000/drivers```
 
-4. Setup the following tests with this specific data (if a test isn't mentioned, doesn't require special setup). Copy and paste from the GET request results set in Step 3 as necessary:
+4. Setup the following tests with this specific data (if a test isn't mentioned, doesn't require special setup). 
+   Copy and paste from the GET request results set in Step 3 as necessary:
 
 - *driverServices tests: -- fetchDriverById test*
 -- From the results set, copy the *ObjectId* for Jim Westphal (1st in the list in the GET request results) in the following lines of test code:
