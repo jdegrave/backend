@@ -33,9 +33,7 @@ NOTE:  ONLY use the 'seed' database for driver services tests!
 4. Setup the following tests with this specific data (if a test isn't mentioned, doesn't require special setup). 
    Copy and paste from the GET request results set in Step 3 as necessary:
 
-    - *driverServices tests: 
-    
-        -- fetchDriverById test*
+    - *driverServices tests: -- fetchDriverById test*
            -- From the results set, copy the *ObjectId* for Jim Westphal (1st in the list in the GET request results) in the following 
               lines of test code:
               
